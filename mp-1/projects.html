@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="scripts.js"></script>
-    <title>Resume Homepage</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
+    <title>Ahmad Sadiq's Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <h1>Ahmad Sadiq's Resume</h1>
-        <p>Welcome to my online resume</p>
+        <p>Your portal to my professional and academic journey.</p>
     </header>
 
     <nav>
@@ -25,28 +25,26 @@
             <li><a href="projects.html">Projects</a></li>
         </ul>
     </nav>
+
     <main>
         <h2>Projects</h2>
-        <p>My projects are listed here. You can also use the calculator below:</p>
-
-        <!-- Calculator Layout -->
-        <div>
+        <p>
+            <strong>Boston Police Overtime Data Analysis</strong>, Fall 2024<br>
+            Analyzed overtime expenditure data using Python, revealing inefficiencies.
+        </p>
+        <div id="calculator">
             <input type="text" id="first-number" placeholder="First Number">
             <input type="text" id="second-number" placeholder="Second Number">
-
             <button onclick="add()">+</button>
             <button onclick="subtract()">-</button>
             <button onclick="multiply()">*</button>
             <button onclick="divide()">/</button>
-            <button onclick="power()">Power</button>
-            <button onclick="clearFields()">Clear</button>
-
             <h3 id="output"></h3>
         </div>
     </main>
 
     <footer>
-        <p>&copy; 2024 Your Name | <a href="#">Credits</a></p>
+        <p>&copy; 2024 Ahmad Sadiq | <a href="#">Credits</a></p>
     </footer>
 </body>
 

@@ -15,6 +15,10 @@ body {
     margin: 0;
 }
 
+p {
+    color: var(--space-cadet);
+}
+
 /* Header and Footer */
 header,
 footer {
@@ -92,6 +96,43 @@ main p {
     margin-top: 20px;
     color: var(--space-cadet);
     /* Paragraph color */
+}
+
+/* Experience Cards Styling */
+.experience-card {
+    border: 1px solid var(--cool-gray);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: var(--antiflash-white);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.experience-card h3 {
+    color: var(--red-pantone);
+    font-size: 1.5em;
+}
+
+.experience-card h4 {
+    color: var(--cool-gray);
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.experience-card ul {
+    padding-left: 20px;
+}
+
+.experience-card ul li {
+    color: var(--space-cadet);
+    margin-bottom: 10px;
+    font-size: 1em;
+    line-height: 1.5;
 }
 
 /* Project Cards */

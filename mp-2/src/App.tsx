@@ -34,6 +34,7 @@ export default function App() {
             image: pokemonJson.sprites.front_default,
             height: pokemonJson.height,
             weight: pokemonJson.weight,
+            base_experience: pokemonJson.base_experience,  // New field added
           };
         })
       );

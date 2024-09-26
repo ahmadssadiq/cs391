@@ -6,6 +6,7 @@ interface Pokemon {
     image: string;
     height: number;
     weight: number;
+    base_experience: number;  // New field added
 }
 
 const AllPokemonDiv = styled.div`
@@ -30,11 +31,12 @@ const SinglePokemonDiv = styled.div`
 export default function PokemonList(props: { data: Pokemon[] }) {
     return (
         <AllPokemonDiv>
-            {props.data.map((pokemon: Pokemon) => (
+            {props.data.map((pokemon) => (
                 <SinglePokemonDiv key={pokemon.id}>
                     <h1>{pokemon.name}</h1>
                     <p>Height: {pokemon.height}</p>
                     <p>Weight: {pokemon.weight}</p>
+                    <p>Base Experience: {pokemon.base_experience}</p>  {/* New field added */}
                     <img src={pokemon.image} alt={`image of ${pokemon.name}`} />
                 </SinglePokemonDiv>
             ))}

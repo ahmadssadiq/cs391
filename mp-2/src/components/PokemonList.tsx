@@ -6,26 +6,26 @@ interface Pokemon {
     image: string;
     height: number;
     weight: number;
-    base_experience: number;  // New field added
+    base_experience: number;  // Ensure this field is present
 }
 
 const AllPokemonDiv = styled.div`
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    background-color: lightblue;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  background-color: lightblue;
 `;
 
 const SinglePokemonDiv = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 30%;
-    padding: 2%;
-    margin: 1%;
-    background-color: lightgreen;
-    border: 3px solid darkgreen;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 30%;
+  padding: 2%;
+  margin: 1%;
+  background-color: lightgreen;
+  border: 3px solid darkgreen;
+  text-align: center;
 `;
 
 export default function PokemonList(props: { data: Pokemon[] }) {
@@ -37,7 +37,7 @@ export default function PokemonList(props: { data: Pokemon[] }) {
                     <p>Height: {pokemon.height}</p>
                     <p>Weight: {pokemon.weight}</p>
                     <p>Base Experience: {pokemon.base_experience}</p>  {/* New field added */}
-                    <img src={pokemon.image} alt={`image of ${pokemon.name}`} />
+                    <img src={pokemon.image} alt={pokemon.name} />
                 </SinglePokemonDiv>
             ))}
         </AllPokemonDiv>

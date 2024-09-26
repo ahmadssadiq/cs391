@@ -8,6 +8,7 @@ interface Pokemon {
   image: string;
   height: number;
   weight: number;
+  base_experience: number;  // Ensure this field is present
 }
 
 const ParentDiv = styled.div`

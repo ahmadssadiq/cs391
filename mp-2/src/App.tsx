@@ -1,35 +1,52 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useEffect, useState } from "react";
+import styled from "styled-components";
+import PokemonList from "./components/PokemonList";
 
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+interface Pokemon {
+  id: number;
+  name: string;
+  image: string;
+  height: number;
+  weight: number;
 }
 
-export default App
+const ParentDiv = styled.div`
+    width: 80vw;
+    margin: auto;
+    border: 5px solid darkgoldenrod;
+`;
+
+export default function App() {
+  const [data, setData] = useState<Pokemon[]>([]);
+
+  useEffect(() => {
+    async function fetchData() {
+      const response = await fetch("https://pokeapi.co/api/v2/pokemon?limit=10");
+      const { results } = await response.json();
+
+      const pokemonData = await Promise.all(
+        results.map(async (pokemon: { name: string; url: string }) => {
+          const pokemonDetails = await fetch(pokemon.url);
+          const pokemonJson = await pokemonDetails.json();
+          return {
+            id: pokemonJson.id,
+            name: pokemonJson.name,
+            image: pokemonJson.sprites.front_default,
+            height: pokemonJson.height,
+            weight: pokemonJson.weight,
+          };
+        })
+      );
+
+      setData(pokemonData);
+    }
+
+    fetchData().catch((error) => console.log("Error fetching Pokémon data: ", error));
+  }, []);
+
+  return (
+    <ParentDiv>
+      <PokemonList data={data} />
+    </ParentDiv>
+  );
+}

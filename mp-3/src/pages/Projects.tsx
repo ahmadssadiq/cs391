@@ -11,7 +11,7 @@ const Projects: React.FC = () => (
             <h2>Projects</h2>
 
             <div className="project-card">
-
+                <img src="/photos/coding.jpeg" alt="Boston Police Overtime Data Analysis" width="400px" height="400px" />
                 <h3>Boston Police Overtime Data Analysis</h3>
                 <p>
                     In Fall 2024, I scrutinized and visualized overtime expenditure data using Python and advanced
@@ -26,7 +26,9 @@ const Projects: React.FC = () => (
 
 
             <div className="project-card">
+
                 <h3>AI-driven Sentiment Analysis Suite</h3>
+                <img src="/photos/reading.webp" alt="Reading" width="400px" height="400px" />
                 <p>
                     This project, powered by LangChain, involved building a sentiment analysis tool for corporate feedback
                     processing.
@@ -40,7 +42,7 @@ const Projects: React.FC = () => (
 
 
             <div className="project-card">
-
+                <img src="photos/robot.webp" alt="Uber vs Lyft Analysis" width="400px" height="400px" />
                 <h3>Uber vs Lyft Analysis</h3>
                 <p>
                     In Fall 2023, I built a responsive web application using React and Node.js to analyze Uber and Lyft
@@ -55,7 +57,7 @@ const Projects: React.FC = () => (
 
 
             <div className="project-card">
-
+                <img src="photos/website.jpeg" alt="SKANS School Full-Stack Web Application" width="400px" height="400px" />
                 <h3>SKANS School Full-Stack Web Application</h3>
                 <p>
                     This full-stack web application was built to manage the data and operations of SKANS School. Using

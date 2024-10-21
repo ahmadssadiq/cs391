@@ -171,6 +171,58 @@ main p {
 }
 
 /* Calculator Styles */
+.calculator {
+  width: 300px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.calculator-display {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.calculator-display input {
+  width: 45%;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.calculator-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.calculator-buttons button {
+  padding: 15px;
+  font-size: 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.calculator-buttons button:hover {
+  background-color: #45a049;
+}
+
+.calculator-result {
+  margin-top: 20px;
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+}
+
 input[type="button"] {
   width: 100%;
   padding: 20px 40px;
@@ -200,9 +252,16 @@ input[type="text"] {
 
 @media (max-width: 750px) {
   nav ul {
-    flex-direction: row;
+    flex-direction: column;
+    /* Change direction to column for smaller screens */
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+    /* Add space between buttons */
   }
 
   main {

@@ -1,4 +1,5 @@
-Hello Graders !
+https://github.com/ahmadssadiq/cs391/tree/main/mp-3
+https://cs391-mp3.vercel.app
 
 
 i was downgraded in mp-1 for these reasons:
@@ -18,3 +19,5 @@ so:
  2. i have styled the Calculator button in mp-3 which was downgraded in mp-1.
 
  3. I have added a navigation link for credit link in mp-3 which wasnt there in mp-1.
+
+EVERYTHING ELSE IS THE SAME ! thank you !

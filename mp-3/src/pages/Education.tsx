@@ -9,8 +9,8 @@ const Education: React.FC = () => (
         <main>
             <h2>Education</h2>
             <p>
-                Boston University, Boston, MA<br>
-                    Bachelor of Arts in Computer Science, Expected May 2025
+                Boston University, Boston, MA<br />
+                Bachelor of Arts in Computer Science, Expected May 2025
             </p>
             <ul>
                 <li>Dean's List: Fall 2022, Fall 2023</li>

@@ -5,6 +5,7 @@ import Experience from './pages/Experience';
 import Projects from './pages/Projects';
 import Certification from './pages/Certification';
 import References from './pages/References';
+import './App.css';
 
 const App: React.FC = () => (
   <Router>
@@ -13,7 +14,7 @@ const App: React.FC = () => (
       <Route path="/education" element={<Education />} />
       <Route path="/experience" element={<Experience />} />
       <Route path="/projects" element={<Projects />} />
-      <Route path="/Certification" element={<Certification />} />
+      <Route path="/certifications" element={<Certification />} />
       <Route path="/References" element={<References />} />
     </Routes>
   </Router>

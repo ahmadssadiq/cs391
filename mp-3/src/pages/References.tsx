@@ -11,7 +11,7 @@ const References: React.FC = () => (
             <p>
                 My girlfriend said she will give me a reference.
             </p>
-            <img src="photos/girlfriend.jpeg" width="400">
+            <img src="photos/girlfriend.jpeg" alt="girlfriend" width="400" />
         </main>
         <Footer />
     </>

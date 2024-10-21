@@ -1,0 +1,228 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--antiflash-white);
+  /* Text color */
+  line-height: 1.6;
+  background-color: var(--space-cadet);
+  /* Background */
+  margin: 0;
+}
+
+p {
+  color: var(--space-cadet);
+}
+
+/* Header and Footer */
+header,
+footer {
+  background-color: var(--space-cadet);
+  color: var(--antiflash-white);
+  text-align: center;
+  padding: 20px 0;
+  background: linear-gradient(90deg, var(--space-cadet), var(--red-pantone), var(--fire-engine-red));
+}
+
+header h1 {
+  font-size: calc(24px + 2vw);
+}
+
+footer a {
+  color: var(--antiflash-white);
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: var(--cool-gray);
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: var(--cool-gray);
+  text-align: center;
+}
+
+nav ul li {
+  margin-bottom: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--antiflash-white);
+  font-size: calc(16px + 1vw);
+}
+
+nav ul li a:hover {
+  color: var(--red-pantone);
+}
+
+/* Main Content */
+main {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 70%;
+  background-color: var(--antiflash-white);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+main img {
+  margin: 20px 0;
+  border-radius: 10px;
+}
+
+main h2 {
+  font-size: calc(20px + 1.5vw);
+  color: var(--red-pantone);
+  /* Heading color */
+}
+
+main p {
+  font-size: calc(16px + 0.5vw);
+  margin-top: 20px;
+  color: var(--space-cadet);
+  /* Paragraph color */
+}
+
+/* Experience Cards Styling */
+.experience-card {
+  border: 1px solid var(--cool-gray);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: var(--antiflash-white);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.experience-card h3 {
+  color: var(--red-pantone);
+  font-size: 1.5em;
+}
+
+.experience-card h4 {
+  color: var(--cool-gray);
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.experience-card ul {
+  padding-left: 20px;
+}
+
+.experience-card ul li {
+  color: var(--space-cadet);
+  margin-bottom: 10px;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+/* Project Cards */
+.project-card {
+  border: 1px solid var(--cool-gray);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: var(--antiflash-white);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.project-card h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: var(--red-pantone);
+  /* Project title color */
+}
+
+.project-card p {
+  font-size: 1em;
+  line-height: 1.5;
+  color: var(--space-cadet);
+  /* Project description color */
+}
+
+/* Calculator Styles */
+input[type="button"] {
+  width: 100%;
+  padding: 20px 40px;
+  background-color: var(--fire-engine-red);
+  color: var(--antiflash-white);
+  font-size: 24px;
+  font-weight: bold;
+  border: none;
+  border-radius: 2px;
+}
+
+input[type="text"] {
+  padding: 20px 30px;
+  font-size: 24px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  border: 2px solid var(--space-cadet);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .project-card {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 750px) {
+  nav ul {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  main {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: calc(18px + 2vw);
+  }
+
+  main p {
+    font-size: calc(14px + 1vw);
+  }
+}
+
+:root {
+  --space-cadet: #2b2d42ff;
+  --cool-gray: rgb(75, 78, 109);
+  --antiflash-white: #edf2f4ff;
+  --red-pantone: #ef233cff;
+  --fire-engine-red: #d90429ff;
+}

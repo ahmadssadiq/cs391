@@ -1,12 +1,13 @@
 import Header from '../components/Header';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
+import Main from '../components/Main';
 
 const Home: React.FC = () => (
     <>
         <Header />
         <Nav />
-        <main>
+        <Main title="Home">
             <h2>Welcome to My Resume</h2>
             <img src="/photos/me.jpeg" alt="Ahmad Sadiq" width="400" /> {/* Self-closing tag */}
             <p>
@@ -15,7 +16,7 @@ const Home: React.FC = () => (
                 and AI-driven solutions. Explore my journey through my experiences,
                 education, certifications, and projects.
             </p>
-        </main>
+        </Main>
         <Footer />
     </>
 );

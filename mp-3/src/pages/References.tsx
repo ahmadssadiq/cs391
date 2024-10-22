@@ -1,18 +1,18 @@
 import Header from '../components/Header';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
+import Main from '../components/Main';
 
 const References: React.FC = () => (
     <>
         <Header />
         <Nav />
-        <main>
-            <h2>References</h2>
+        <Main title="References">
             <p>
                 My girlfriend said she will give me a reference.
             </p>
             <img src="photos/girlfriend.jpeg" alt="girlfriend" width="400" />
-        </main>
+        </Main>
         <Footer />
     </>
 );

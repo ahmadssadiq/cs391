@@ -1,13 +1,13 @@
 import Header from '../components/Header';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
+import Main from '../components/Main';
 
 const Experience: React.FC = () => (
     <>
         <Header />
         <Nav />
-        <main>
-            <h2>Professional Experience</h2>
+        <Main title="Experience">
 
             <div className="experience-card">
                 <h3>DuneAI, Islamabad, Pakistan</h3>
@@ -43,7 +43,7 @@ const Experience: React.FC = () => (
                 </ul>
             </div>
 
-        </main>
+        </Main>
         <Footer />
     </>
 );

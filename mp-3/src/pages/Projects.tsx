@@ -2,13 +2,13 @@ import Header from '../components/Header';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 import Calculator from '../components/Calculator';
+import Main from '../components/Main';
 
 const Projects: React.FC = () => (
     <>
         <Header />
         <Nav />
-        <main>
-            <h2>Projects</h2>
+        <Main title="Projects">
 
             <div className="project-card">
                 <img src="/photos/coding.jpeg" alt="Boston Police Overtime Data Analysis" width="400px" height="400px" />
@@ -69,7 +69,7 @@ const Projects: React.FC = () => (
                 </p>
             </div>
             <Calculator />
-        </main>
+        </Main>
         <Footer />
     </>
 );

@@ -1,13 +1,13 @@
 import Header from '../components/Header';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
+import Main from '../components/Main';
 
 const Education: React.FC = () => (
     <>
         <Header />
         <Nav />
-        <main>
-            <h2>Education</h2>
+        <Main title="Education">
             <p>
                 Boston University, Boston, MA<br />
                 Bachelor of Arts in Computer Science, Expected May 2025
@@ -17,7 +17,7 @@ const Education: React.FC = () => (
                 <li>Secretary, South Asian Student Association, 2024</li>
                 <li>Co-public Chair, Organization Pakistan Society, 2024</li>
             </ul>
-        </main>
+        </Main>
         <Footer />
     </>
 );

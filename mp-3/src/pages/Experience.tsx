@@ -6,8 +6,6 @@ import Main from '../components/Main';
 function Experience() {
     return (
         <>
-            <Header />
-            <Nav />
             <Main title="Experience">
                 <div className="experience-card">
                     <h3>DuneAI, Islamabad, Pakistan</h3>
@@ -39,7 +37,6 @@ function Experience() {
                     </ul>
                 </div>
             </Main>
-            <Footer />
         </>
     );
 }

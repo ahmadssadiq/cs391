@@ -6,8 +6,6 @@ import Main from '../components/Main';
 function Home() {
     return (
         <>
-            <Header />
-            <Nav />
             <Main title="Home">
                 <h2>Welcome to My Resume</h2>
                 <img src="/photos/me.jpeg" alt="Ahmad Sadiq" width="400" /> {/* Self-closing tag */}
@@ -18,7 +16,6 @@ function Home() {
                     education, certifications, and projects.
                 </p>
             </Main>
-            <Footer />
         </>
     );
 }

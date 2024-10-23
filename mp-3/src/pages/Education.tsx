@@ -6,8 +6,6 @@ import Main from '../components/Main';
 function Education() {
     return (
         <>
-            <Header />
-            <Nav />
             <Main title="Education">
                 <p>
                     Boston University, Boston, MA<br />
@@ -19,7 +17,6 @@ function Education() {
                     <li>Co-public Chair, Organization Pakistan Society, 2024</li>
                 </ul>
             </Main>
-            <Footer />
         </>
     );
 }

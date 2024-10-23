@@ -6,14 +6,11 @@ import Main from '../components/Main';
 function Certification() {
     return (
         <>
-            <Header />
-            <Nav />
             <Main title="Certifications">
                 <p>
                     Pursuing relevant certifications in software engineering and machine learning.
                 </p>
             </Main>
-            <Footer />
         </>
     );
 }

@@ -7,8 +7,6 @@ import Main from '../components/Main';
 function Projects() {
     return (
         <>
-            <Header />
-            <Nav />
             <Main title="Projects">
                 <div className="project-card">
                     <img src="/photos/coding.jpeg" alt="Boston Police Overtime Data Analysis" width="400px" height="400px" />
@@ -46,7 +44,6 @@ function Projects() {
                 </div>
                 <Calculator />
             </Main>
-            <Footer />
         </>
     );
 }

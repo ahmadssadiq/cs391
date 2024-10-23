@@ -13,7 +13,6 @@ import './App.css';
 function Root() {
   return (
     <>
-      <Header />
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -23,7 +22,6 @@ function Root() {
         <Route path="/certifications" element={<Certification />} />
         <Route path="/references" element={<References />} />
       </Routes>
-      <Footer />
     </>
   );
 }

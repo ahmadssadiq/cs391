@@ -3,22 +3,24 @@ import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 import Main from '../components/Main';
 
-const Home: React.FC = () => (
-    <>
-        <Header />
-        <Nav />
-        <Main title="Home">
-            <h2>Welcome to My Resume</h2>
-            <img src="/photos/me.jpeg" alt="Ahmad Sadiq" width="400" /> {/* Self-closing tag */}
-            <p>
-                I am Ahmad Sadiq, a Computer Science student at Boston University,
-                focusing on robotics software engineering, full-stack development,
-                and AI-driven solutions. Explore my journey through my experiences,
-                education, certifications, and projects.
-            </p>
-        </Main>
-        <Footer />
-    </>
-);
+function Home() {
+    return (
+        <>
+            <Header />
+            <Nav />
+            <Main title="Home">
+                <h2>Welcome to My Resume</h2>
+                <img src="/photos/me.jpeg" alt="Ahmad Sadiq" width="400" /> {/* Self-closing tag */}
+                <p>
+                    I am Ahmad Sadiq, a Computer Science student at Boston University,
+                    focusing on robotics software engineering, full-stack development,
+                    and AI-driven solutions. Explore my journey through my experiences,
+                    education, certifications, and projects.
+                </p>
+            </Main>
+            <Footer />
+        </>
+    );
+}
 
 export default Home;

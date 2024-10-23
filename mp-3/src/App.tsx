@@ -13,7 +13,6 @@ import './App.css';
 function Root() {
   return (
     <>
-      <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/education" element={<Education />} />

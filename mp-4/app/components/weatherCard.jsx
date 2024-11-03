@@ -42,12 +42,6 @@ const WeatherInfo = styled.div`
   margin-bottom: 10px;
 `;
 
-const WeatherIcon = styled.img`
-  width: 50px;
-  height: 50px;
-  margin-bottom: 5px;
-`;
-
 const Condition = styled.span`
   font-size: 0.9rem;
   color: #444;
@@ -72,26 +66,26 @@ const TempLow = styled.span`
 `;
 
 const WeatherCard = ({ datetime, tempmax, tempmin, conditions }) => {
-    const date = new Date(datetime);
-    const dayOfWeek = date.toLocaleDateString('en-US', { weekday: 'short' });
-    const month = date.toLocaleDateString('en-US', { month: 'short' });
-    const day = date.getDate();
+  const date = new Date(datetime);
+  const dayOfWeek = date.toLocaleDateString('en-US', { weekday: 'short' });
+  const month = date.toLocaleDateString('en-US', { month: 'short' });
+  const day = date.getDate();
 
-    return (
-        <Card>
-            <DateContainer>
-                <Day>{dayOfWeek}</Day>
-                <FullDate>{`${month} ${day}`}</FullDate>
-            </DateContainer>
-            <WeatherInfo>
-                <Condition>{conditions}</Condition>
-            </WeatherInfo>
-            <Temperature>
-                <TempHigh>{Math.round(tempmax)}°</TempHigh>
-                <TempLow>{Math.round(tempmin)}°</TempLow>
-            </Temperature>
-        </Card>
-    );
+  return (
+    <Card>
+      <DateContainer>
+        <Day>{dayOfWeek}</Day>
+        <FullDate>{`${month} ${day}`}</FullDate>
+      </DateContainer>
+      <WeatherInfo>
+        <Condition>{conditions}</Condition>
+      </WeatherInfo>
+      <Temperature>
+        <TempHigh>{Math.round(tempmax)}°</TempHigh>
+        <TempLow>{Math.round(tempmin)}°</TempLow>
+      </Temperature>
+    </Card>
+  );
 };
 
 export default WeatherCard;

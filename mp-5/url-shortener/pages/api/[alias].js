@@ -9,11 +9,12 @@ export default async function handler(req, res) {
 
         const link = await db.collection("urls").findOne({ alias });
         if (link) {
-            res.redirect(link.url);
+            res.redirect(link.url); // Redirect to the stored URL
         } else {
-            res.status(404).json({ error: "Alias not found" });
+            res.status(404).send("Alias not found"); // Handle alias not found
         }
     } catch (error) {
-        res.status(500).json({ error: "Something went wrong" });
+        console.error(error);
+        res.status(500).send("Something went wrong");
     }
 }
